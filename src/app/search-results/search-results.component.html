@@ -1,0 +1,16 @@
+
+ <div class="container" *ngIf="searchResult.length==0">
+    <p>there is no results to <b>{{value}}</b></p>
+ </div>
+<div class="row" *ngIf="searchResult.length>0">
+    <div *ngFor="let book of searchResult" class="col-md-2 card" >
+        <img src="{{book.cover}}" class="card-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">{{book.book}}</h5>
+             <h6 class="card-text">author : {{book.author}}</h6>
+             <h6 class="card-text">publisher : {{book.publisher}}</h6>
+             <h6 class="card-text">price : {{book.price}}$</h6>
+
+           </div>
+     </div>
+   </div>

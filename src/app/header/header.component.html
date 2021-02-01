@@ -1,0 +1,30 @@
+<nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark mb-3">
+   <a class="navbar-nav" routerLink="/books"> <h4>books store</h4> </a>
+  <span class="spacer"></span>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+        <li class="navbar-item dropdown nav-link">
+        <div class="" >
+            <a (click)="onLogout()">LogOut</a>
+        </div>
+        </li>
+        <li class="navbar-item dropdown nav-link">
+        <div class="" >
+            <a  [routerLink]="['books/addBook/new']" *ngIf="isAdmin">Add Book</a>
+        </div>
+        </li>
+        <li class="navbar-item dropdown nav-link">
+        <div class="" >
+            <a  [routerLink]="['books/myPurchaseBook']">My Purchase Book</a>
+        </div>
+        </li>
+    </ul>
+ </div>
+  </nav>
+  <form [formGroup]="searchBook">
+    <div class="form-group">
+        <label for="exampleInputEmail1">search book</label>
+        <input type="text" required class="form-control" id="book" formControlName="search"  placeholder="Search book name">
+        <button name="search" class="btn btn-primary"  type="submit" (click)="search()" title="" aria-label="">search</button>
+    </div>
+</form>

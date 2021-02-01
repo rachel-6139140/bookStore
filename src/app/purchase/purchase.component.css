@@ -1,0 +1,42 @@
+
+.card{
+    cursor: pointer;
+    border: 1px solid #ddd;
+    float: right !important;
+    margin: 15px 0px 15px 15px;
+    border-radius: 1rem;
+}
+.card-title{
+        font-size: 18px;
+        color: #337da1;
+        max-height: 70px;
+        overflow: hidden;
+        line-height: 1;
+        width: 190px;
+        height: 42px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+h6.card-text {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    margin-left: 5px !important;
+}
+p {
+    font-size: 16px !important;
+    margin: 9px !important;
+}
+.card-text{
+    color: #337da1;
+    font-weight: bold;
+}
+.card:hover {
+    box-shadow: 2px 5px 17px 5px rgba(0, 0, 0, .19);
+    border-color: white;
+}
+button.btn.btn-primary.btn-sm.m-b-sm {
+    margin-left: 20px;
+}
+.row{
+    margin-left: 200px;
+}

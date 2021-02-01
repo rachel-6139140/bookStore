@@ -1,0 +1,10 @@
+label{
+    margin-left: 25%;
+    display: block;
+    }
+    .form-control {
+        margin: auto;
+        margin-left: 25%;
+        width: 50%;
+        display: inline-block;
+    }

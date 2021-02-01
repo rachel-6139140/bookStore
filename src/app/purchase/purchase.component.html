@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div *ngFor="let book of myPurchaseBook" class="col-md-3 card" >
+           <div class="card-body">
+             <h5 class="card-title">{{book.book}}</h5>
+             <h6 class="card-text">author : {{book.author}}</h6>
+             <h6 class="card-text">publisher : {{book.publisher}}</h6>
+             <p>{{book.price}}$</p>
+
+           </div>
+     </div>
+   </div>
